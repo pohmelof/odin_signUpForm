@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero">
+        <div class="logo">
+          <img src="./odin-lined.png" alt="" />
+          <span>ODIN</span>
+        </div>
+        <div class="img-origin-link">
+          Photo by
+          <a
+            href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Halie West</a
+          >
+          on
+          <a
+            href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
+        </div>
+      </div>
+      <div class="main">
+        <p class="main-text">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em>
+          to get started.
+        </p>
+        <p class="main-text">You <em>know</em> you want to.</p>
+        <form
+          class="form"
+          action="send.to/mydb/123"
+          method="post"
+          id="register"
+        >
+          <h3>Let's do this!</h3>
+          <div class="main-form">
+            <p class="main-form-block">
+              <label for="firstName">FIRST NAME</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </p>
+
+            <p class="main-form-block">
+              <label for="lastName">LAST NAME</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </p>
+            <p class="main-form-block">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" required />
+            </p>
+            <p class="main-form-block">
+              <label for="phoneNumber">PHONE NUMBER</label>
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                placeholder="80055525251"
+                minlength="11"
+                maxlength="11"
+                pattern="[0-9]{11}"
+                required
+              />
+            </p>
+            <p class="main-form-block">
+              <label for="password">PASSWORD</label>
+              <input
+                type="password"
+                id="password"
+                name="'userPassword"
+                required
+              />
+              <span class="error-msg hidden">* Passwords do not match</span>
+            </p>
+            <p class="main-form-block">
+              <label for="confirmPassword">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirm"
+                required
+              />
+            </p>
+          </div>
+        </form>
+        <div class="btn-wrapper">
+          <button class="btn submit-btn" form="register" type="submit">
+            Create Account
+          </button>
+        </div>
+        <p>
+          Already have an account?
+          <a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+            target="_blank"
+            >Log in</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
